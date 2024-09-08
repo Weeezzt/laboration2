@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Random;
 
-public class Creature extends Item implements Moveable{
+public abstract class Creature extends Item implements Moveable{
     protected Random random = new Random();
     protected int health;
     protected int attack;

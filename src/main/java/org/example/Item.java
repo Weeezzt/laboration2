@@ -7,7 +7,7 @@ public abstract class Item {
     int x;
     int y;
 
-    void position(Maze maze){
+    void setPosition(Maze maze){
         ArrayList<ArrayList<MazeItem>> mazeGrid = maze.getMaze();
         for (int i = 0; i < mazeGrid.size(); i++){
             for(int j = 0; j < mazeGrid.get(i).size(); j++){

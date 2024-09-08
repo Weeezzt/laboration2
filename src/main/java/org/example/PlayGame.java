@@ -21,12 +21,11 @@ public class PlayGame {
         HealthPotion healthPotion = maze.getHealthPotion();
         Exit exit = maze.getExit();
 
-        monster.position(maze);
-        demon.position((maze));
-        sword.position(maze);
-        exit.position(maze);
-
-        healthPotion.position(maze);
+        monster.setPosition(maze);
+        demon.setPosition((maze));
+        sword.setPosition(maze);
+        exit.setPosition(maze);
+        healthPotion.setPosition(maze);
 
         while (running) {
             player.move(maze);
